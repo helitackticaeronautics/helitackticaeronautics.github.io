@@ -91,7 +91,7 @@
   .why { background: var(--ink); color: var(--on-dark); }
   .split { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
   @media (min-width: 58rem) { .split { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 5rem; } }
-  .why .intro { margin-top: 1.5rem; max-width: 30rem; color: #A9BBB8; }
+  .why .intro { margin-top: 1.5rem; max-width: 30rem; color: var(--on-dark); }
   .rows { list-style: none; margin: 0; padding: 0; counter-reset: r; }
   .rows > li { padding: 1.75rem 0; border-bottom: 1px solid rgba(224,235,245,.22); }
   .rows > li:first-child { padding-top: 0; }
@@ -177,7 +177,7 @@
       <h1 class="rise" style="--i:0" data-i18n="hero_h1">Modern aircraft for the fireline</h1>
       <p class="lede rise" style="--i:1; color: var(--on-dark);" data-i18n="hero_lede">Designing tools to fight wildfires today and in the future</p>
       <div class="actions rise" style="--i:2">
-        <a class="btn" href="#contact" data-i18n="hero_cta">Join the newsletter</a>
+        <a class="btn" href="#contact" data-i18n="hero_cta">Share your experience</a>
         <a class="textlink" href="#mission" style="color: var(--on-dark);" data-i18n="hero_link">Read our mission</a>
       </div>
     </div>
@@ -187,18 +187,21 @@
     <div class="wrap mission-grid">
       <div>
         <h2 class="kicker" data-i18n="m_kicker">Our mission</h2>
-        <p class="statement" data-i18n="m_statement">Our mission is to give wildland firefighters new capabilities with purpose built UAVs</p>
+        <p class="statement" data-i18n="m_statement"> Our mission is to give wildland firefighters new capabilities with purpose built unmanned aerial vehicles (UAVs)</p>
       </div>
       <div class="mission-side">
         <div class="mission-point">
           <h3 data-i18n="m1_h">Current action</h3>
-          <p data-i18n="m1_p">We are engaging with firefighting departments in urban-wildlife interface regions, knowledge keepers, provincial agencies, and researchers.</p>
+          <p data-i18n="m1_p">We are speaking with firefighting departments, knowledge keepers, provincial agencies, and researchers to learn about current wildfire management capabilities and gaps.</p>
         </div>
         <div class="mission-point">
           <h3 data-i18n="m2_h">Goal of engagement</h3>
           <p data-i18n="m2_p">Identify where UAVs can help, driven by what stakeholders are asking for and what the current technology can support.</p>
         </div>
-        <p class="mission-close" data-i18n="m_close">Empowered firefighters create more resilient communities amid a changing climate.</p>
+        </div<div class="mission-point">
+          <h3 data-i18n="m3_h">Underlying rational</h3>
+          <p data-i18n="m3_p">The climate is changing… We want to empower firefighters to create more resilient communities today and in the future.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -207,18 +210,18 @@
     <div class="wrap split">
       <div>
         <h2 data-i18n="w_h2">Why wildfires are getting worse</h2>
-        <p class="intro" data-i18n="w_intro">Fire seasons are starting earlier, lasting longer, and outpacing the people and aircraft sent to meet them. The gap between when a fire starts and when it's found is where lives, homes, and forests are won or lost, and it's the gap we're building to close.</p>
+        <p class="intro" data-i18n="w_intro">Fire seasons are starting earlier, lasting longer, and outpacing the people and aircraft sent to meet them. The gap between when a fire starts and when it's found is where lives, homes, and forests are won or lost.</p>
       </div>
       <div>
         <ul class="rows">
-          <li><h3 data-i18n="w1_h">A country warming twice as fast</h3>
-            <p data-i18n="w1_p">Canada is heating at roughly double the global average rate. Warmer, drier conditions make the landscape more prone to ignition and spread, and they're stretching the fire season earlier into spring and later into fall.</p></li>
-          <li><h3 data-i18n="w2_h">Record seasons are becoming normal</h3>
-            <p data-i18n="w2_p">Canada's three worst fire seasons on record have all happened recently. 2023 alone burned more area than any season before it, by a wide margin.</p></li>
-          <li><h3 data-i18n="w3_h">Drought sets the stage before fire season starts</h3>
-            <p data-i18n="w3_p">Early snowmelt and prolonged drought dry out forests before the season even begins, so fires that do start spread faster and burn hotter.</p></li>
+          <li><h3 data-i18n="w1_h">The country is warming fast</h3>
+            <p data-i18n="w1_p">Canada is warming faster than the global average, especially in northern  regions. Record heat in recent years is driving hotter, more intense fires that are pushing the limits of existing response capacity.</p></li>
+          <li><h3 data-i18n="w2_h">Fire seasons are becoming longer</h3>
+            <p data-i18n="w2_p">Canada's three worst fire seasons on record have all happened recently. Warmer winters are producing shallower snowpacks and earlier springs. Snow melts sooner, landscapes dry out earlier, and fire season starts earlier and runs longer </p></li>
+          <li><h3 data-i18n="w3_h">Drought conditions are intensifying</h3>
+            <p data-i18n="w3_p">Extreme heat and drought are becoming more common in all corners of Canada. Drier fuels ignite more easily and burn more severely.</p></li>
         </ul>
-        <p class="sources" data-i18n="w_src">Sources: Natural Resources Canada, the Canadian Climate Institute, World Weather Attribution, npj Climate and Atmospheric Science (2024).</p>
+        <p class="sources" data-i18n="w_src">Sources: Standing Senate Committee on Agriculture and Forestry. (2026, June). Canada on fire: The catastrophic and escalating effects of wildfires on lives and communities. Senate of Canada. https://sencanada.ca </p>
       </div>
     </div>
   </section>
@@ -248,17 +251,16 @@
         <h2 data-i18n="a_h2">What we hold ourselves to</h2>
         <dl class="spec">
           <div class="spec-item"><dt data-i18n="a1_t">People first</dt><dd data-i18n="a1_d">Every design decision starts with the crew on the ground and what keeps them safe</dd></div>
-          <div class="spec-item"><dt data-i18n="a2_t">Built in this country</dt><dd data-i18n="a2_d">To be designed, assembled and supported in Canada, with parts and service you can reach</dd></div>
-          <div class="spec-item"><dt data-i18n="a3_t">Sustainability</dt><dd>[TBD]</dd></div>
-          <div class="spec-item"><dt data-i18n="a4_t">Pragmatic</dt><dd data-i18n="a4_d">Solutions that emphasize reliability, durability, and repairability above all</dd></div>
+          <div class="spec-item"><dt data-i18n="a2_t">Built in this country</dt><dd data-i18n="a2_d">To be designed, assembled and operated in Canada, with continued support you can reach</dd></div>
+          <div class="spec-item"><dt data-i18n="a3_t">Pragmatic solutions</dt><dd data-i18n="a3_d">Tools are designed for actual conditions. Safety, Reliability, and Repairability are prioritized above all</dd></div>
         </dl>
       </div>
       <div>
         <h2 data-i18n="s_h2">Where we are</h2>
         <ol class="path">
-          <li class="now"><h3 data-i18n="s1_h">Talking with community stakeholders</h3><p data-i18n="s1_p">We are gathering requirements from fire agencies, forestry operators and utilities</p></li>
-          <li><h3 data-i18n="s2_h">Building the prototype</h3><p data-i18n="s2_p">2027: Demonstrate the technology readiness level and establish a Canadian supply chain</p></li>
-          <li><h3 data-i18n="s3_h">Field trials with partners</h3><p data-i18n="s3_p">Work with local experts to assess our solution</p></li>
+          <li class="now"><h3 data-i18n="s1_h">Talking with experts</h3><p data-i18n="s1_p">We are gathering application requirements from fire agencies, forestry operators and utilities.</p></li>
+          <li><h3 data-i18n="s2_h">Building the prototype</h3><p data-i18n="s2_p">Based on a specific wildfire application, we will integrate proven, modern technology onto our UAV platform \n TRL4 -> TRL6</p></li>
+          <li><h3 data-i18n="s3_h">Field trials</h3><p data-i18n="s3_p">Work with local partners to verify our solution under expected conditions.\n TRL7 ->TRL9 </p></li>
         </ol>
       </div>
     </div>
@@ -268,15 +270,15 @@
     <div class="wrap split">
       <div>
         <h2 data-i18n="c_h2">Help shape the first build</h2>
-        <p class="lede" data-i18n="c_lede">Tell us about your operation and what a drone would need to do for you. We read every message.</p>
+        <p class="lede" data-i18n="c_lede">Tell us about your operation and/or what type of aerial support could be helpful. We read every message.</p>
         <p class="fine"><span data-i18n="c_email">Prefer email?</span> <a href="mailto:hello@your-domain.com">info@helitacktic.ca</a></p>
       </div>
 
       <form id="contact-form" action="https://script.google.com/macros/s/AKfycbyxnhaqHiKlgYDbdgtlg3azo_c2_bWYeqfBmaplhVCim3vAMI-if_tsBY0Ip1OWwg-uoQ/exec" method="POST">
-        <div><label for="name" data-i18n="f_name">Name</label><input id="name" name="name" type="text" autocomplete="name" required></div>
-        <div><label for="email" data-i18n="f_email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
-        <div><label for="org" data-i18n="f_org">Organization and role</label><input id="org" name="organization" type="text" autocomplete="organization"></div>
-        <div><label for="need" data-i18n="f_need">What would you use a drone for?</label><textarea id="need" name="message" required></textarea></div>
+        <div><label for="name" data-i18n="f_name">Name (optional)</label><input id="name" name="name" type="text" autocomplete="name" required></div>
+        <div><label for="email" data-i18n="f_email">Email (optional)</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div><label for="org" data-i18n="f_org">Organization and role (optional)</label><input id="org" name="organization" type="text" autocomplete="organization"></div>
+        <div><label for="need" data-i18n="f_need">What problems are you facing? Where can we help?</label><textarea id="need" name="message" required></textarea></div>
         <div><button class="btn" id="submit-button" type="submit" data-i18n="f_send">Send message</button></div>
         <div id="form-status" role="status" aria-live="polite"></div>
       </form>
